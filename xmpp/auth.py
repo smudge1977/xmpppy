@@ -39,7 +39,11 @@ def C(some):
 def HHSHA1(some):
     return sha1(ensure_binary(some, CHARSET_ENCODING)).hexdigest()
 def B64(some):
+<<<<<<< HEAD
     return ensure_str(base64.b64encode(ensure_binary(some,CHARSET_ENCODING)),CHARSET_ENCODING)
+=======
+    return ensure_str(base64.b64encode(ensure_binary(some,CHARSET_ENCODING)),CHARSET_ENCODING).replace('\r', '').replace('\n', '')
+>>>>>>> e12316d (Add `B64` shortcut function to streamline base64 encoding)
 
 class NonSASL(PlugIn):
     """ Implements old Non-SASL (XEP-0078) authentication used in jabberd1.4 and transport authentication."""
