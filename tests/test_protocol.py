@@ -3,10 +3,16 @@ from xmpp.protocol import *
 
 
 class Test_JID():
+<<<<<<< HEAD
 
     def test_equality(self):
         assert 'me@myserver/res' == JID('me@myserver/res')
 
+=======
+    
+    def test_equality(self):
+        assert 'me@myserver/res' == JID('me@myserver/res')
+>>>>>>> cd82665 (Update to handeling JID creation but not sure of everyones use case #57)
     def test_1(self):
         jid = JID('audiod/Jcop')
         assert jid.getDomain() == ''

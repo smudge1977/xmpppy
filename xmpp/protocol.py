@@ -282,7 +282,11 @@ class JID:
             else: self.domain,self.resource=jid,''
         if self.node == '':
             self.node = self.domain
+<<<<<<< HEAD
             self.domain = ''
+=======
+            self.domain = '' 
+>>>>>>> cd82665 (Update to handeling JID creation but not sure of everyones use case #57)
     def getNode(self):
         """ Return the node part of the JID """
         return self.node
